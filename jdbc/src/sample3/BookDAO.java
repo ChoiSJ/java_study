@@ -30,7 +30,7 @@ public class BookDAO {
 		pstmt.setString(2, book.getAuthor());
 		pstmt.setString(3, book.getPublisher());
 		pstmt.setInt(4, book.getPrice());
-		pstmt.executeQuery();
+		pstmt.executeUpdate();
 		
 		pstmt.close();
 		con.close();
