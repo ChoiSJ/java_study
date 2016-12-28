@@ -49,26 +49,4 @@ public class EmpController {
 		
 		searchField.setText("");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
