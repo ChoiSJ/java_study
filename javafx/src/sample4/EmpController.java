@@ -28,7 +28,7 @@ public class EmpController {
 	private TextField depIdField;
 	
 	@FXML
-	private void search() throws SQLException {
+	private void search() {
 		try {
 			int empId = Integer.parseInt(searchField.getText());
 			EmpVO emp = ed.employee(empId);
@@ -65,6 +65,13 @@ public class EmpController {
 			alert3.setHeaderText(null);
 			alert3.setContentText("잘못된 입력입니다.");
 			alert3.showAndWait();
+			clear();
+		} catch (SQLException e) {
+			Alert alert4 = new Alert(AlertType.WARNING);
+			alert4.setTitle("검색 완료");
+			alert4.setHeaderText(null);
+			alert4.setContentText("오류가 발생하였습니다.");
+			alert4.showAndWait();
 			clear();
 		}
 	}

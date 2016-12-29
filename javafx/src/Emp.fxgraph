@@ -1,0 +1,9 @@
+package sample6
+
+import javafx.scene.layout.AnchorPane
+
+component Emp {
+	AnchorPane {
+		//TODO Add Nodes
+	}
+}
