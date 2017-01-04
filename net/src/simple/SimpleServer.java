@@ -1,4 +1,4 @@
-package sample;
+package simple;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class SampleServer {
+public class SimpleServer {
 	
 	public static void main(String[] args) throws Exception {
 		

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.HangmanController">
+   <children>
+      <TextArea editable="false" layoutX="25.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="320.0" layoutY="340.0" mnemonicParsing="false" onAction="#endProgram" prefHeight="23.0" prefWidth="50.0" text="종료" />
+      <Button layoutX="85.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="S" />
+      <Button layoutX="260.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="N" />
+      <Button layoutX="225.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="B" />
+      <Button layoutX="155.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="C" />
+      <Button layoutX="190.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="V" />
+      <Button layoutX="120.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="X" />
+      <Button layoutX="85.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="Z" />
+      <Button layoutX="50.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="A" />
+      <Button layoutX="120.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="D" />
+      <Button layoutX="155.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="F" />
+      <Button layoutX="190.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="G" />
+      <Button layoutX="225.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="H" />
+      <Button layoutX="260.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="J" />
+      <Button layoutX="295.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="K" />
+      <Button layoutX="310.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="O" />
+      <Button layoutX="275.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="I" />
+      <Button layoutX="240.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="U" />
+      <Button layoutX="205.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="Y" />
+      <Button layoutX="170.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="T" />
+      <Button layoutX="135.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="R" />
+      <Button layoutX="100.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="E" />
+      <Button layoutX="65.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="W" />
+      <Button layoutX="30.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="Q" />
+      <Button layoutX="295.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="M" />
+      <Button layoutX="345.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="P" />
+      <Button layoutX="330.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="L" />
+      <Label layoutX="240.0" layoutY="15.0" text="행맨게임">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quiz" editable="false" layoutX="235.0" layoutY="190.0" prefHeight="20.0" prefWidth="135.0" />
+      <Button layoutX="260.0" layoutY="340.0" mnemonicParsing="false" onAction="#startProgram" prefHeight="23.0" prefWidth="50.0" text="시작" />
+      <Label layoutX="235.0" layoutY="160.0" text="문제" />
+   </children>
+</AnchorPane>
