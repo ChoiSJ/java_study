@@ -2,14 +2,14 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="380.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.HangmanController">
+<AnchorPane fx:id="hangImage" prefHeight="380.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.HangmanController">
    <children>
-      <TextArea editable="false" layoutX="25.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" />
       <Button layoutX="320.0" layoutY="340.0" mnemonicParsing="false" onAction="#endProgram" prefHeight="23.0" prefWidth="50.0" text="종료" />
       <Button layoutX="85.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="S" />
       <Button layoutX="260.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="N" />
@@ -37,13 +37,18 @@
       <Button layoutX="295.0" layoutY="300.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="M" />
       <Button layoutX="345.0" layoutY="230.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="P" />
       <Button layoutX="330.0" layoutY="265.0" mnemonicParsing="false" onAction="#searchHangman" prefHeight="25.0" prefWidth="25.0" text="L" />
-      <Label layoutX="240.0" layoutY="15.0" text="행맨게임">
+      <Label layoutX="230.0" layoutY="15.0" text="Hangman Game">
          <font>
-            <Font size="18.0" />
+            <Font size="19.0" />
          </font>
       </Label>
       <TextField fx:id="quiz" editable="false" layoutX="235.0" layoutY="190.0" prefHeight="20.0" prefWidth="135.0" />
       <Button layoutX="260.0" layoutY="340.0" mnemonicParsing="false" onAction="#startProgram" prefHeight="23.0" prefWidth="50.0" text="시작" />
       <Label layoutX="235.0" layoutY="160.0" text="문제" />
+      <ImageView fx:id="hangmanImage" fitHeight="200.0" fitWidth="200.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../hangmanDefault.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
