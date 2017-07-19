@@ -26,7 +26,6 @@ public class HangmanController {
 	private String visibleVoca;
 	private int index;
 	
-	
 	@FXML
 	public void searchHangman(ActionEvent event) {
 		Button btn = (Button) event.getSource();
